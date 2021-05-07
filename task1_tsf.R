@@ -32,12 +32,8 @@ print(summary(model))
 
 result=predict(object = model ,newdata =  test_sample)
 result
-final=cbind(Scores=dataset$Scores,result)
-class(final)
-final=as.data.frame(final)
-final
 
-z=data.frame(pred=final$result,actual=dataset$Scores)
+z=data.frame(pred=result,actual=dataset$Scores)
 z
 mse=sqrt(mean((z$actual-z$pred)^2))
 mse
