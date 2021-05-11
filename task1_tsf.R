@@ -1,6 +1,6 @@
 #TASK-1
 
-# Prediction using supervised learning
+# Prediction using supervised Machine learning
 # Simple Linear Regression
 # Importing the dataset
 library(readxl)
