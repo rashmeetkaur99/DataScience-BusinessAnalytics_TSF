@@ -23,8 +23,8 @@ train_sample<-subset(dataset,split_values==T)
 nrow(train_sample)
 test_sample<-subset(dataset,split_values==F)
 nrow(test_sample)
+
 # creating the apppropriate linear model
-plot(dataset)
 y=dataset$Scores
 x=dataset$Hours
 model=lm(y~x,train_sample)
